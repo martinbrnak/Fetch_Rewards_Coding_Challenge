@@ -3,9 +3,7 @@ package com.example.fetch_rewards_exercise
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -29,7 +27,7 @@ fun ApiCell(item: DataApi) {
             .fillMaxWidth()
             .border(1.dp, Color.Black)
             .border(4.dp, Color.LightGray)
-            .padding(16.dp)
+            .padding(32.dp)
     ) {
         Row {
             Column(
@@ -37,13 +35,7 @@ fun ApiCell(item: DataApi) {
                     .weight(1f)
             )
             {
-                Text(
-                    text = "List Id: ${item.listId}"
-                )
-                Spacer(
-                    modifier = Modifier
-                        .height(4.dp)
-                )
+
                 Text(
                     text = "Id: ${item.id}"
                 )
